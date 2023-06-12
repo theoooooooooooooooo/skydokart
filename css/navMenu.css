@@ -1,0 +1,108 @@
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.navbar {
+    transition: all 0.4s;
+    background: rgb(255, 255, 255);
+}
+
+.navbar .nav-link {
+    color: black;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: blue;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: white;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 452px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+.text-small {
+    font-size: 0.9rem !important;
+}
+
+
+body {
+    min-height: 100vh;
+    background-image: url(../image/skydokartback3.png);
+    background-attachment: fixed;
+    background-position: center top;
+} 
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 540px;
+    z-index: 100; 
+    background-color: #f7c957;
+    border-radius: 25px;
+  }
+
+
+  @media screen and (max-width: 390px) {
+    .bottom-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-right: 20px;
+        margin-left: 24px;
+        margin-bottom: 10px;
+        width: 300px;
+        z-index: 100; 
+        background-color: #f7c957;
+        border-radius: 70px;
+      }
+  }
