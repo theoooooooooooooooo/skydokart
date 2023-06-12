@@ -8,7 +8,7 @@ $query = "SELECT * FROM Pilote";
 $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 ?>
 
-<title>Liste pilote</title>
+<title>Liste pilote 256561</title>
 
 <body>
     <div class="content">
