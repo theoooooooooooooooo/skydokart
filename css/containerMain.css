@@ -1,0 +1,191 @@
+body{
+    font-size: 20px!important;
+}
+
+.content{
+    margin-bottom: 90px!important;
+    padding: 10px 10px;
+}
+
+a{
+    color: black!important;
+    text-decoration: none!important;
+}
+ 
+.checkingQrCode{
+    background-color: white;
+    color: black;
+    height: 10%;
+}
+
+.fabutton {
+    background: none;
+    padding: 0px;
+    border: none;
+  }
+
+  .newPilote button{
+    margin-bottom: 20px;
+  }
+
+
+  #connBtn{
+    margin-top: 20px;
+  }
+
+  .formLogin{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .input[type=checkbox]{
+    border-radius: 25px;
+  }
+
+  input, textarea {
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+
+  /* Liste Pilote css */
+  .container {
+    max-width: 1000px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+ 
+}
+h2 small {
+    font-size: 0.5em;
+}
+.responsive-table{
+    padding-left: 1px;
+}
+.responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.responsive-table .table-header {
+    background-color: #f7c957;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 25px;
+}
+.responsive-table .table-row {
+    background-color: rgb(0, 0, 0);  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 70%;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.sortForm{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+ /* Class pour la photo */
+.piloteImg{
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+ /*--------------------------*/
+.responsive-table .col-1 {
+    flex-basis: 10%;
+}
+.responsive-table .col-2 {
+    flex-basis: 40%;
+}
+.responsive-table .col-3 {
+    flex-basis: 25%;
+}
+.responsive-table .col-4 {
+    flex-basis: 25%;
+}
+
+.col{
+    color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+    .responsive-table .table-header {
+        display: flex;
+   }    
+   .responsive-table .table-header .col.header{
+        display: initial;
+   }
+    .responsive-table li {
+        display: block;
+        padding: 10px 10px
+   }
+    .responsive-table .col {
+        flex-basis: 100%;
+   }
+    .responsive-table .col {
+        display: flex;
+        color: white;
+        /* padding: 10px 0; */
+   }
+    .responsive-table .col:before {
+        color: #6c7a89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 20%;  
+        text-align: right;
+   }
+
+   .responsive-table {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .table-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .table-row .piloteImg {
+        flex-basis: 30%;
+        max-width: 12%;
+      }
+    
+      .table-row .center {
+        flex-basis: 40%;
+        max-width: 40%;
+      }
+    
+      .table-row .options {
+        flex-basis: 30%;
+        max-width: 30%;
+        align-self: center;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+/* .responsive-table .table-row {
+    flex-direction: column; 
+} */
+
+
+
