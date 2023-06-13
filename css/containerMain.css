@@ -3,7 +3,11 @@ body{
 }
 
 .content{
+<<<<<<< HEAD
     margin-bottom: 90px!important;
+=======
+    margin-bottom: 100px!important;
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     padding: 10px 10px;
 }
 
@@ -52,9 +56,14 @@ a{
   /* Liste Pilote css */
   .container {
     max-width: 1000px;
+<<<<<<< HEAD
 
     padding-left: 10px;
     padding-right: 10px;
+=======
+    padding-left: 20px;
+    padding-right: 20px;
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 }
 h2 {
     font-size: 26px;
@@ -89,7 +98,11 @@ h2 small {
     align-items: center;
     opacity: 70%;
     box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     border-radius: 25px;
+=======
+    border-radius: 100px;
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 }
 
 .sortForm{
@@ -99,7 +112,11 @@ h2 small {
 }
  /* Class pour la photo */
 .piloteImg{
+<<<<<<< HEAD
     width: 70px;
+=======
+    width: 70px; 
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     height: 70px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 100%;
@@ -128,7 +145,11 @@ h2 small {
     .responsive-table .table-header {
         display: flex;
    }    
+<<<<<<< HEAD
    .responsive-table .table-header .col.header{
+=======
+   .responsive-table .table-header .col.header{ 
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         display: initial;
    }
     .responsive-table li {
@@ -165,7 +186,11 @@ h2 small {
 
     .table-row .piloteImg {
         flex-basis: 30%;
+<<<<<<< HEAD
         max-width: 12%;
+=======
+        max-width: 14%;
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
       }
     
       .table-row .center {
@@ -179,7 +204,11 @@ h2 small {
         align-self: center;
         margin-top: 0;
         display: flex;
+<<<<<<< HEAD
         flex-direction: column;
+=======
+        justify-content: space-between; 
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
       }
 }
 

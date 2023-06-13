@@ -23,7 +23,11 @@ try {
 
     $newURL = "https://skydo-kart.com/ListeCateg.php"; 
     header('Location: '.$newURL);
+
     die();
+
+    die(); 
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();

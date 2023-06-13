@@ -22,6 +22,7 @@
 
 .scan-code {
     background-color: #F7C957;
+<<<<<<< HEAD
     font-size: 28px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -30,3 +31,10 @@
     margin-left: 30px;
     margin-right: 30px;
 }
+=======
+    font-size: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-radius: 25px;
+}
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a

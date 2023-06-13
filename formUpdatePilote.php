@@ -15,7 +15,11 @@ $query = "SELECT CodeRouePluie FROM Roue WHERE piloteId = " . $_GET['id'] . "";
 $dataRoues2 = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 
 // Récupérer les accessoires associée au pilote
+
 $query = "SELECT casque, gants FROM Accessoires WHERE idPilote = " . $_GET['id'] . "";
+
+$query = "SELECT casque, gants, combinaison, chassis, moteur FROM Accessoires WHERE idPilote = " . $_GET['id'] . "";
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 $dataAccessoires = $conn->query($query)->fetch(PDO::FETCH_ASSOC);
 ?>
 
@@ -57,6 +61,17 @@ if(!$_SESSION["user"]){
       <label for="gants">Gants:</label>
       <input type="text" id="gants" name="gants" value="<?php echo $dataAccessoires["gants"] ?>" >
       <br><br>
+
+      <label for="combinaison">Combinaison:</label>
+      <input type="text" id="combinaison" name="combinaison" value="<?php echo $dataAccessoires["combinaison"] ?>" >
+      <br><br>
+      <label for="chassis">Chassis:</label>
+      <input type="text" id="chassis" name="chassis" value="<?php echo $dataAccessoires["chassis"] ?>" >
+      <br><br>
+      <label for="moteur">Moteur:</label>
+      <input type="text" id="moteur" name="moteur" value="<?php echo $dataAccessoires["moteur"] ?>" >
+      <br><br>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
       <label for="roueSlick1">Roue Slick 1:</label>
       <input type="text" id="roueSlick1" name="roueSlick1" value="<?php echo $dataRoues[0]["CodeRoueSlick"] ?>">
       <br><br>

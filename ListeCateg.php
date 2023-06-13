@@ -9,7 +9,11 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 
 ?>
 
+
 <title>Liste Categorie Test25</title>
+
+<title>Liste Categorie</title>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 <body>
     <div class="content">
@@ -45,11 +49,16 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
         <br>
         <br>
         <div class="center-container">
+
         <a href="formAddCategorie.php" class="newCategorie"><button class="button">Nouvelle Catégorie</button></a></div>
+
+        <a href="formAddCategorie.php" class="newCategorie"><button class="button">Nouvelle Categorie</button></a></div>
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         <ul class="responsive-table">
             </br>
             </br>
              <?php foreach ($data as $el) { ?>
+
                 <li class="table-row">
                     <!-------------------------------->
                     <div class="center">
@@ -59,6 +68,16 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
                     <div class="col options">
                         <form method="post" action="singleCategorie.php">
                             <button class="fabutton"><span class="material-icons" style="font-size: 40px;">feed</span></button><input type="hidden" id="id" name="id" value=<?php echo $el[0] ?>></form>
+
+                <li class="table-row" href="singleCategorie.php"> 
+                    <!-------------------------------->
+                    <div class="center">
+                        <div class="col" style="font-size: 25px;"><?php echo $el[1] ?></div>
+                    </div>
+                    <div class="col options">
+                        <form method="post" action="singleCategorie.php">
+                            <button class="fabutton"><span class="material-icons" style="font-size: 40px; color: white;">feed</span></button><input type="hidden" id="id" name="id" value=<?php echo $el[0] ?>></form>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
                             <br>
                             <form method="post" action="formUpdateCategorie.php">
                             <button class="fabutton">

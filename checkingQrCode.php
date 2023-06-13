@@ -20,6 +20,7 @@ if(!$_SESSION["user"]){
 <br>
 <br>
 <br>
+
 <div class="content">
   <br>
   <form method="post" align="center">
@@ -29,6 +30,14 @@ if(!$_SESSION["user"]){
 </div>
 <h1 class=scan-code align="center">Veuillez scanner le code barre</h1>
 
+
+<h1 class=scan-code align="center">Veuillez scanner le code bar</h1>
+<br>
+  <form method="post" align="center">
+    <input type="text" id="codeBar" name="codeBar" required="required" autofocus class="hidden-input">
+    <input type="hidden" value="Enregistrer">
+  </form>
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 <section>
 <?php
   $codeBar = $_POST["codeBar"];
@@ -69,7 +78,11 @@ if(!$_SESSION["user"]){
           color:red;
         }
       </style>
+
         <p class=\"p\">Erreur: Cette objet n'a pas était scanner.
+
+        <p class=\"p\">Code bar: non reconnu</p>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
       </div>";
     }
   }
@@ -107,6 +120,14 @@ if(!$_SESSION["user"]){
         opacity: 70%;
     }
 
+
+    .hidden-input {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+    }
+
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     h1 {
         text-align: center;
         color: white;
@@ -165,4 +186,31 @@ if(!$_SESSION["user"]){
     height: 150px; 
   }
 }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; 
+      margin-top: -10px; 
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      
+    }
+
+    /* Media queries pour la tablette Samsung A7 Lite */
+    @media only screen and (max-width: 800px) {
+      .logo-container {
+        height: 80px; 
+        margin-top: 35px; 
+      }
+
+      .logo {
+        width: 150px; 
+        height: 150px; 
+      }
+    }
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 </style>

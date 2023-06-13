@@ -37,6 +37,17 @@ if(!$_SESSION["user"]){
         <label for="casque">Casque :
         <input type="text" id="casque" name="casque"></label>
         <br><br>
+
+        <label for="combinaison">Combinaison :
+        <input type="text" id="combinaison" name="combinaison"></label>
+        <br><br>
+        <label for="chassis">Chassis :
+        <input type="text" id="chassis" name="chassis"></label>
+        <br><br>
+        <label for="moteur">Moteur :
+        <input type="text" id="moteur" name="moteur"></label>
+        <br><br>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         <label for="roueSlick1">Roue slick 1 :
         <input type="text" id="roueSlick1" name="roueSlick1"></label>
         <br><br>
@@ -75,20 +86,33 @@ if(!$_SESSION["user"]){
         <br><br>
         <label for="categorie">Catégorie:
         <select name="categorie" id="categorie" required>
+
         <option value= 0 >---Veuillez choisir une catégorie---</option>
           <?php
           // Récupérer les catégories depuis la base de données
           $stmt = $conn->prepare("SELECT id, nom FROM Categorie");        
+
+          <?php
+          // Récupérer les catégories depuis la base de données
+          $stmt = $conn->prepare("SELECT id, nom FROM Categorie");         
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
           $stmt->execute();
           $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
           // Générer les options
           foreach ($categories as $categorie) {
               echo '<option value=' . $categorie['id'] . '>' . $categorie['nom'] . '</option>';
+
           }
           ?>
         </select></label>
         <br><br>
+
+          } 
+          ?>
+        </select></label>
+        <br><br>  
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         <div class="button-container">
           <input class="button" type="submit" value="Enregistrer">
         </div>
@@ -131,12 +155,21 @@ if(!$_SESSION["user"]){
 
     input[type="text"] {
       width: 71%;
+
     padding: -6px;
     border: 1px solid #ccc;
     border-radius: 25px;
     box-sizing: border-box;
     font-size: 30px;
     display: inline-block;
+
+      padding: -6px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      box-sizing: border-box;
+      font-size: 30px;
+      display: inline-block;
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     }
 
     .button-container {
@@ -155,7 +188,11 @@ if(!$_SESSION["user"]){
         font-size: 20px;
         display: inline-block; /* Ajout de l'affichage en ligne */
         vertical-align: middle; /* Alignement vertical */    
+
         margin-left: 190px;
+
+        margin-left: 0px;
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     }
 
     button:hover {
@@ -167,6 +204,9 @@ if(!$_SESSION["user"]){
         margin-top: 20px;
         text-align: center;
     }
+
+    
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 </style>
     <div id="qr-reader"></div>
   </div>

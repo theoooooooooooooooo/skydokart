@@ -47,7 +47,11 @@
 
 
 /* Change navbar styling on small viewports */
+<<<<<<< HEAD
 @media (max-width: 991.98px) {
+=======
+@media (max-width: 452px) {
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     .navbar {
         background: #fff;
     }
@@ -72,16 +76,51 @@
 
 
 body {
+<<<<<<< HEAD
     min-height: 110vh;
     background-image: url(../image/skydokartback3.png);
 }
+=======
+    min-height: 100vh;
+    background-image: url(../image/skydokartback3.png);
+    background-attachment: fixed;
+    background-position: center top;
+} 
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 .bottom-menu {
     position: fixed;
     bottom: 0;
     left: 0;
+<<<<<<< HEAD
     width: 100%;
     z-index: 100;
     background-color: #F7C957;
   }
 
+=======
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 540px;
+    z-index: 100; 
+    background-color: #f7c957;
+    border-radius: 25px;
+  }
+
+
+  @media screen and (max-width: 390px) {
+    .bottom-menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-right: 20px;
+        margin-left: 24px;
+        margin-bottom: 10px;
+        width: 300px;
+        z-index: 100; 
+        background-color: #f7c957;
+        border-radius: 70px;
+      }
+  }
+>>>>>>> cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a

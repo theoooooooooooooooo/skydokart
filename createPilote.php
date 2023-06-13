@@ -30,14 +30,28 @@ try {
 
     //Insertion des accessoires
 
+
     $stmt2 = $conn->prepare("INSERT INTO Accessoires (casque, gants, idPilote) VALUES (:casque, :gants, :id)");
     $stmt2->bindParam(':casque', $casque);
     $stmt2->bindParam(':gants', $gants);
+
+    $stmt2 = $conn->prepare("INSERT INTO Accessoires (casque, gants, combinaison, chassis, moteur, idPilote) VALUES (:casque, :gants, :combinaison, :chassis, :moteur, :id)");
+    $stmt2->bindParam(':casque', $casque);
+    $stmt2->bindParam(':gants', $gants);
+    $stmt2->bindParam(':combinaison', $combinaison);
+    $stmt2->bindParam(':chassis', $chassis);
+    $stmt2->bindParam(':moteur', $moteur);
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     $stmt2->bindParam(':id', $idPiloteInserted);
 
     // Liaison des données
     $casque = $_POST["casque"];
     $gants = $_POST["gants"];
+
+    $combinaison = $_POST["combinaison"];
+    $chassis = $_POST["chassis"];
+    $moteur = $_POST["moteur"];
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
     // Exécution de la requête
     $stmt2->execute();

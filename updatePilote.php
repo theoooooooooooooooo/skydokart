@@ -35,7 +35,11 @@ try {
         // Modification 
         $sql4 = "UPDATE Accessoires SET casque=?, gants=?, combinaison=?, chassis=?, moteur=? WHERE idPilote=?";
         $stmt4 = $conn->prepare($sql4);
+
         $stmt4->execute([$casque, $gants, $id]);
+
+        $stmt4->execute([$casque, $gants, $combinaison, $chassis, $moteur, $id]);
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 
     // Pour chaque Roue modifier le code en bdd
@@ -44,7 +48,11 @@ try {
         $codeRouePluie = $_POST["rouePluie".($key+1)];
         // Modification
         $sql3 = "UPDATE Roue SET CodeRoueSLick=?, CodeRouePluie=? WHERE id=?";
+
         $stmt3 = $conn->prepare($sql3); 
+
+        $stmt3 = $conn->prepare($sql3);  
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         $stmt3->execute([$codeRoueSlick, $codeRouePluie, $roue["id"]]);
 
     }

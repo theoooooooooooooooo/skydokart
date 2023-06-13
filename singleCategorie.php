@@ -16,8 +16,15 @@ try {
     $id = $_POST['id'];
 
     // Préparer la requête avec un paramètre lié
+
     $stmt = $conn->prepare("SELECT Categorie.nom AS nomCategorie, Pilote.id, Pilote.Nom AS nomPilote, Prenom, Numero FROM Categorie INNER JOIN Pilote ON idCategorie = Categorie.id WHERE Categorie.id = :id");
 
+
+    $stmt = $conn->prepare("SELECT Categorie.nom AS nomCategorie, Pilote.Nom AS nomPilote, Prenom, Numero 
+    FROM Categorie INNER JOIN Pilote 
+        ON Categorie.id = Pilote.idCategorie
+    WHERE Categorie.id = :id");
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
   
     // Associer la valeur du paramètre
     $stmt->bindParam(':id', $id);
@@ -54,6 +61,7 @@ try {
             <?php 
                 foreach($result as $ligne){
                     echo "
+
                         <tr>
                             <td>" . $ligne["nomPilote"] . "</td>
                             <td>" . $ligne["Prenom"] . "</td>
@@ -62,6 +70,13 @@ try {
   
                         </tr>";
 
+
+                       <tr>
+							<td>" .$ligne["nomPilote"]. "</td>
+							<td>" .$ligne["Prenom"]. "</td>
+							<td>" .$ligne["Numero"]. "</td>
+						</tr>";
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
                 }
             ?>
         </table>

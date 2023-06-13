@@ -8,7 +8,11 @@ $query = "SELECT * FROM Pilote";
 $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 ?>
 
+
 <title>Liste pilote</title>
+
+<title>Liste pilote 256561</title>
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 <body>
     <div class="content">
@@ -66,7 +70,7 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
                     <div class="piloteImg"> 
                         <img src="" alt="">
                     </div>
-                    <!-------------------------------->
+                    
                     <div class="center">
                         <p class="col" style="font-size: 25px;"><?php echo $el[1] ?></p>
                         <p class="col" style="font-size: 25px;"><?php echo $el[2] ?></p>
@@ -193,7 +197,11 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
     }
 }
 
+
 @media only screen and (max-width: 390px) {
+=======
+@media only screen and (max-width: 450px) {
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 .logo-container {
   display: flex;
   justify-content: center;
@@ -224,6 +232,9 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
     height: 50px;
 }
 
+
+
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 }
 
 </style>

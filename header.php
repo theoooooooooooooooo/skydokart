@@ -46,6 +46,20 @@
                 </nav>
         </div>
     </div>
+
+        <div class="container">
+            <div class="bottom-menu">
+                <nav class="navbar bottom-menu">
+                        <ul class="navbar-nav ml-auto nav-list">
+                        <li class="nav-item"><a href="https://skydo-kart.com" class="nav-link text-uppercase font-weight-bold"><img class= "pilote" src="image/iconcasque.png" style="width: 30px; height: 30px;"></a></li>
+                        <li class="nav-item"><a href="https://skydo-kart.com/ListeCateg.php" class="nav-link text-uppercase font-weight-bold"><img class= "categ" src="image/iconcateg2.png" style="width: 40px; height: 40px;"></a></li>
+                        <li class="nav-item"><a href="https://skydo-kart.com/checkingQrCode.php" class="nav-link text-uppercase font-weight-bold"><img class= "scan" src="image/iconscan.png" style="width: 30px; height: 30px;"></a></li>
+                        <li class="nav-item"><a href="https://skydo-kart.com/deconnexion.php"><img class= "deco" src="image/icondeco.png" style="width: 30px; height: 30px;"></a></li>
+                        </ul>
+                </nav>
+            </div>
+        </div>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 </header>
 
 <?php
@@ -60,7 +74,52 @@ ini_set( "session.cookie_lifetime", $timeout );
 ?>
 
 <style>
+
     .navbar-nav.ml-auto {
   margin: auto;
 }
+
+@media screen  and (max-width: 767px) {
+    .navbar-nav.ml-auto {
+    margin: auto;
+    }
+
+    .navbar-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Ajustez l'espacement selon vos besoins */
+    }
+    .nav-item {
+    margin-right: 70px; /* Ajustez l'espace horizontal entre les éléments selon vos besoins */
+    }
+}
+
+@media screen  and (max-width: 450px) {
+    .navbar-nav.ml-auto {
+    margin: auto;
+    }
+
+    .navbar-center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Ajustez l'espacement selon vos besoins */
+    }
+    .nav-item {
+    margin-right: 40px; /* Ajustez l'espace horizontal entre les éléments selon vos besoins */
+    }
+}
+
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 </style>

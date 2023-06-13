@@ -64,7 +64,8 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
                     <div class="piloteImg">
                         <img src="" alt="">
                     </div>
-                    <!-------------------------------->
+                    
+
                     <div class="col" data-label="Nom"><?php echo $el[1] ?></div>
                     <div class="col" data-label="Prénom"><?php echo $el[2] ?></div>
                     <div class="col" data-label="Numéro"><?php echo $el[3] ?></div>
@@ -74,6 +75,28 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
                         <form method="get" action="deletePilote.php"><button class="fabutton" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce pilote ?')"><span class="material-icons" style="font-size: 40px;">delete</span></button><input type="hidden" id="id" name="id" value=<?php echo $el[0] ?>></form>
                     </div>
                 </li>
+
+                    <div class="center">
+                        <p class="col" data-label="Nom"><?php echo $el[1] ?></p>
+                        <p class="col" data-label="Prénom"><?php echo $el[2] ?></p>
+                        <p class="col" data-label="Numéro"><?php echo $el[3] ?></p>
+                    </div>
+                    <div class="col options" data-label="Options">
+                        <form method="get" action="formUpdatePilote.php">
+                            <button class="fabutton">
+                                <img src="image/iconedit.png" alt="Edit" style="width: 30px; height: 30px;">
+                            </button>
+                            <input type="hidden" id="id" name="id" value=<?php echo $el[0] ?>>
+                        </form>
+                        <br>
+                        <form method="get" action="deletePilote.php">
+                            <button class="fabutton" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce pilote ?')">
+                                <img src="image/iconsupp.png" alt="Delete" style="width: 30px; height: 30px;">
+                            </button>
+                            <input type="hidden" id="id" name="id" value=<?php echo $el[0] ?>>
+                        </form>
+                    </div>
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
             <?php } ?>
         </ul>
     </div>
@@ -135,7 +158,11 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
         background-color: rgba(0, 0, 0, 0.5);
     }
 
+
     .modal-content {
+
+    .modal-content { 
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
         background-color: #fefefe;
         margin: auto;
         padding: 20px;

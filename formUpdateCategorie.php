@@ -82,7 +82,11 @@ if(!$_SESSION["user"]){
       border-radius: 25px;
       box-sizing: border-box;
       font-size: 30px;
+
       display: inline-block;
+
+      display: inline-block; 
+ cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     }
 
     .button {
@@ -92,11 +96,19 @@ if(!$_SESSION["user"]){
         color: #black;
         border: none;
         border-radius: 25px;
+
         cursor: pointer;
         font-size: 20px;
         display: inline-block; /* Ajout de l'affichage en ligne */
         vertical-align: middle; /* Alignement vertical */
         margin-left: 190px;
+
+        cursor: pointer; 
+        font-size: 20px;
+        display: inline-block; /* Ajout de l'affichage en ligne */
+        vertical-align: middle; /* Alignement vertical */
+        margin-left: 190px;     
+cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
     }
 
     button:hover {
