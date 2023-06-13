@@ -13,7 +13,6 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 <title>Liste Categorie Test25</title>
 
 <title>Liste Categorie</title>
- cfc03fd8f00ecfd041fcab1ef0a8b8d82d576c4a
 
 <body>
     <div class="content">
